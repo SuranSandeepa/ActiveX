@@ -1,18 +1,20 @@
+/* Global styles */
 body {
-  font-family: "Josefin Sans";
-  background-color: #fffafb;
+  font-family: "Josefin Sans"; /* Set the font for the entire page */
+  background-color: #fffafb; /* Set the background color */
 }
 
 * {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+  padding: 0px; /* Reset padding to 0 for all elements */
+  margin: 0px; /* Reset margin to 0 for all elements */
+  box-sizing: border-box; /* Include padding and border in the box model */
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0px; /* Remove scrollbar in WebKit browsers */
 }
 
+/* Arrow styles for horizontal scrolling menu */
 .right-arrow,
 .left-arrow {
   cursor: pointer;
@@ -33,25 +35,28 @@ body {
 }
 
 .right-arrow {
-  right: 140px;
+  right: 140px; /* Adjust position for right arrow */
 }
 
 .right-arrow:hover,
 .left-arrow:hover {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3); /* Scale on hover for arrow buttons */
 }
 
+/* Styles for horizontal scrolling menu wrapper */
 .react-horizontal-scrolling-menu--wrapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Styles for detail image */
 .detail-image {
   width: 729px;
   height: 742px;
 }
 
+/* Styles for hero banner image */
 .hero-banner-img {
   position: absolute;
   right: 40px;
@@ -61,6 +66,7 @@ body {
   margin-top: -330px;
 }
 
+/* Styles for exercise card */
 .exercise-card {
   width: 400px;
   height: 445px;
@@ -80,21 +86,25 @@ body {
   height: 326px;
 }
 
+/* Styles for body part card */
 .bodyPart-card {
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
 }
 
+/* Hover effect for exercise and body part cards */
 .exercise-card:hover,
 .bodyPart-card:hover {
   transform: scale(1.1, 1.1);
 }
 
+/* Styles for search button on hover */
 .search-btn:hover {
   color: #ff2625 !important;
   border: 1px solid #ff2625 !important;
 }
 
+/* Styles for exercise video container */
 .exercise-video {
   display: flex;
   flex-direction: column;
@@ -104,6 +114,7 @@ body {
   text-decoration: none;
 }
 
+/* Media queries for responsive design */
 @media screen and (max-width: 1200px) {
   .detail-image {
     width: 300px;
@@ -116,11 +127,11 @@ body {
 
   .left-arrow,
   .right-arrow {
-    position: static !important;
+    position: static !important; /* Adjust arrow position on smaller screens */
   }
 
   .hero-banner-img {
-    display: none;
+    display: none; /* Hide hero banner image on smaller screens */
   }
 
   .exercise-card {
